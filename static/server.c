@@ -12,6 +12,10 @@
 
 int main(void) 
 { 
+  int x=6;
+  FILE *fp=fopen("text.txt","a");
+  fprintf(fp,"yes you are right ！\ny=4+%d",x);
+  fclose(fp);  
   // 声明并初始化一个服务器端的socket地址结构 
   struct sockaddr_in server_addr; 
   bzero(&server_addr, sizeof(server_addr)); 
