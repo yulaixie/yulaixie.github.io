@@ -11,7 +11,7 @@ The gcc (v4.3.2) should be installed
 The PASS (V2) should be installed
 The BerkeleyDB (version 4.6.21) should be installed
 
-Note that you are required to copy the mount.lasagna file in the mount.lasagna directory of the preschool to the /sbin directory. This will invoke the mount.lasagna script when you run the mount -t lasagna command.
+Note that you are required to copy the mount.lasagna file in the mount.lasagna directory of the passtool to the /sbin directory. This will invoke the mount.lasagna script when you run the mount -t lasagna command.
 
 
 Using PASS:
