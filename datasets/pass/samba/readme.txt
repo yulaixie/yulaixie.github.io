@@ -1,3 +1,2 @@
-samba-test-normal is the samba-1-provenance
-  to used as rule database, samba-2-normal-provenance is used to test the false alarm rate£¬samba-2-intrusion-provenance is used to test the detection rate. 
+In the paper on the use of Gaussian distribution, the folder samba-rule-intrusion is the rule database, samba-test-normal is the normal database for testing, and samba-test-transform is the database for intrusion deformation.
 
