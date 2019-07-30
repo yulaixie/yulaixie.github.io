@@ -1,1 +1,1 @@
-In the paper on the use of Gaussian distribution, the folder samba-rule-intrusion is the dataset for normal behavior, samba-test-normal is the normal dataset for testing, and samba-test-transform is the dataset for intrusion behavior variant.
+In the paper used for Guassian distribution method, the folder samba-rule-intrusion is the dataset for normal behavior, samba-test-normal is the normal dataset for detection, and samba-test-transform is the dataset for intrusion behavior variant.
