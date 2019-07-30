@@ -1,1 +1,1 @@
-In the paper on the use of Gaussian distribution, the folder distccd-rule-intrusion is the rule database, the distccd-test-normal is the normal database for testing, and the distccd-test-transform is the database for intrusion deformation.
+In the paper on the use of Gaussian distribution, the folder distccd-rule-intrusion is the dataset for normal behavior, distccd-test-normal is the normal dataset for testing, and distccd-test-transform is the dataset for intrusion behavior variant.
