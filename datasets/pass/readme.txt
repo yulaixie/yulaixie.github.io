@@ -12,7 +12,7 @@ The PASS (V2) should be installed
 The passtools should be installed
 The BerkeleyDB (version 4.6.21) should be installed
 
-passtools£ºuserlevel tools needed for use with the PASS kernel.
+passtools----userlevel tools needed for use with the PASS kernel.
 Note that you are required to copy the mount.lasagna file in the mount.lasagna directory of the passtool to the /sbin directory, that will invoke the mount.lasagna script when run the mount -t lasagna command.
 The installation directory of passtools in our machine is /media/passtools-20101210
 The stuff in this directory:
