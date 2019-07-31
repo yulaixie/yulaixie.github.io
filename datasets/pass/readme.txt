@@ -9,22 +9,32 @@ Prerequisites:
 The linux (v2.6.23.17) should be installed
 The gcc (v4.3.2) should be installed
 The PASS (V2) should be installed
+The passtools should be installed
 The BerkeleyDB (version 4.6.21) should be installed
 
+passtools£ºuserlevel tools needed for use with the PASS kernel.
 Note that you are required to copy the mount.lasagna file in the mount.lasagna directory of the passtool to the /sbin directory, that will invoke the mount.lasagna script when run the mount -t lasagna command.
-
+The installation directory of passtools in our machine is /media/passtools-20101210
+The stuff in this directory:
+	libtwig - library for working with the "twig" log format.
+	libwdb - library for working with the lasagna/waldo databases.
+	sage - query engine.
+	waldo - kernel remote manipulation tool for lasagna fs.
+	convert2xml - program to dump a lasagna/waldo database as XML.
+	twig_dump - program to dump a twig log file.
+	wdb_dump - program to dump a lasagna/waldo database.
 Using PASS:
 Collecting normal data
 Step 1.Mount the pass system
 Add a disk device /dev/sdb to the virtual machine, and then partition the device, eg./dev/sdb1
       mkfs -t lasagna /dev/sdb1 ------------------------------------------------------------Initialization
-      mount -t lasagna /dev/sdb1 /mnt/pass
+      mount -t lasagna /dev/sdb1  /mnt/pass
 
       mount -t ext3 /dev/sdb1 /mnt/pass --------------------------------------------------mount ext3
 Step 2. Export the collected provenance data
-      cd /mnt/pass/.lasagna_stuff/
-      /media/passtools-20101210/waldo/waldo -o -p db/ k00000000001.twig
-      /media/passtools-20101210/twig_dump/twig_dump k00000000001.twig>/root/1111.txt
+       cd /mnt/pass/.lasagna_stuff/
+      /media/passtools-20101210/waldo/waldo -o -p  db/ k00000000001.twig       ----Write twig to the database db
+      /media/passtools-20101210/twig_dump/twig_dump k00000000001.twig>/root/1111.txt  ---Convert .twig to .txt
 	  
 Collecting abnormal or intrusion data:
 The test includes two computers, one for the intrusion detection server and one for the attack source machine. 
