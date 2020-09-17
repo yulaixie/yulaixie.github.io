@@ -1,0 +1,1 @@
+In the folder sendmail-rule is the dataset for normal behavior, sendmail-test-normal is the normal dataset for detection, and sendmail-test-abnormal is the dataset for intrusion behavior variant.

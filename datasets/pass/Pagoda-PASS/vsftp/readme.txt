@@ -1,0 +1,1 @@
+In the folder vsftp-rule is the dataset for normal behavior, vsftp-test-normal is the normal dataset for detection, and vsftp-test-abnormal is the dataset for intrusion behavior variant.

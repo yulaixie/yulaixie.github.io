@@ -1,0 +1,1 @@
+In the paper used for Guassian distribution method, the folder ransomware-rule  is the dataset for normal behavior, ransomware-test-normal is the normal dataset for detection, and ransomware-test-abnormal is the dataset for intrusion behavior variant.
