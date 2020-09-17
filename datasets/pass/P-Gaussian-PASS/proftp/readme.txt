@@ -1,0 +1,1 @@
+In the paper used for Guassian distribution method, the folder proftp-rule is the dataset for normal behavior, proftp-test-normal is the normal dataset for detection, and proftp-test-abnormal is the dataset for intrusion behavior variant.

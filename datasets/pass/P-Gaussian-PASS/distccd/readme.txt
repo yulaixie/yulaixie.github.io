@@ -1,0 +1,1 @@
+In the paper used for Guassian distribution method, the folder distccd-rule  is the dataset for normal behavior, distccd-test-normal is the normal dataset for detection, and distccd-test-abnormal is the dataset for intrusion behavior variant.

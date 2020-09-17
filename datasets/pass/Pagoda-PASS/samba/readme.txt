@@ -1,0 +1,1 @@
+the folder samba-rule is the dataset for normal behavior, samba-test-normal is the normal dataset for detection, and samba-test-abnormal is the dataset for intrusion behavior variant.

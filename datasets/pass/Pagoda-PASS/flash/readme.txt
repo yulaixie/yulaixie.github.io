@@ -1,0 +1,1 @@
+In the folder flash-rule is the dataset for normal behavior, flash-test-normal is the normal dataset for detection, and flash-test-abnormal is the dataset for intrusion behavior variant.

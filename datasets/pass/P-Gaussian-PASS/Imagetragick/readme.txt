@@ -1,0 +1,1 @@
+In the paper used for Guassian distribution method, the folder Imagetraick-rule is the dataset for normal behavior, Imagetraick-test-normal is the normal dataset for detection, and  Imagetraick-test-abnormal is the dataset for intrusion behavior variant.

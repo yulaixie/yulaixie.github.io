@@ -1,0 +1,1 @@
+In the paper used for Guassian distribution method, the folder phishing-email-rule is the dataset for normal behavior,  phishing-email-test-normal is the normal dataset for detection, and  phishing-email-test-abnormal is the dataset for intrusion behavior variant.

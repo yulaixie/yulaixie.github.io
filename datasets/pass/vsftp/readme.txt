@@ -1,1 +1,0 @@
-In the paper used for Guassian distribution method, the folder vsftp-rule-intrusion is the dataset for normal behavior, vsftp-test-normal is the normal dataset for detection, and vsftp-test-transform is the dataset for intrusion behavior variant.
